@@ -1,0 +1,69 @@
+/* Estilos para la clase todo */
+.jeje {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container, .container2 {
+    flex: 1; /* Esto hace que ambos contenedores ocupen el mismo espacio */
+    margin-right: 4em; /* Espacio entre los contenedores */
+  }
+  .container{
+    max-width: 50em;
+  }
+  .container2{
+    max-width: 50em;
+  }
+.todo {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan automáticamente */
+    margin-bottom: 20px; /* Espacio entre cada fila de tarjetas */
+    justify-content: space-between; /* Distribuye las tarjetas de manera uniforme en cada fila */
+    width: 100%; /* Ajusta el ancho de cada tarjeta para que haya dos por fila */
+    height: 17.5em;
+  }
+  
+  /* Estilos para la clase imagen */
+  .imagen {
+    flex: 0 0 30%; /* Ajusta el ancho de la imagen */
+    margin-right: 20px; /* Espacio a la derecha de la imagen */
+  }
+  
+  /* Estilos para la clase info */
+  .info {
+    flex: 1; /* La información ocupa el espacio restante */
+  }
+  
+  /* Estilos para la tarjeta */
+  .todo {
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 20px; /* Espacio interno */
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  
+  /* Estilos para el título */
+  .info h2 {
+    font-size: 18px;
+    margin-bottom: 10px; /* Espacio inferior */
+  }
+  
+  /* Estilos para el precio */
+  .info p:last-child {
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  /* Estilos para la imagen */
+  .imagen img {
+    max-width: 100%; /* Ajustar imagen al contenedor */
+    height: auto; /* Mantener proporción */
+  }
+  
+  /* Ajustar el tamaño de las tarjetas en pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .todo {
+      width: calc(100% - 20px); /* Ajusta el ancho de cada tarjeta para que ocupe todo el ancho en pantallas pequeñas */
+    }   
+  }
+

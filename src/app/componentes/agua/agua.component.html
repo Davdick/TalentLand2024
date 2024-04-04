@@ -1,0 +1,50 @@
+<div class="container">
+    <br/>
+    <div class="row">
+        <div class="col-8">
+            
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Calcula cuánta agua utilizar</h5>
+                  <select id="etapa" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option value="">-- Seleccionar etapa --</option>
+                    <option value="1">Inicial</option>
+                    <option value="2">Desarrollo</option>
+                    <option value="3">Medios</option>
+                    <option value="4">Finales</option>
+                    <option value="5">Cosecha</option>
+                  </select>
+                  <select id="cultivo" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option value="">-- Seleccionar cultivo --</option>
+                    <option value=".2">Ajo</option>
+                    <option value=".3">Alfalfa</option>
+                    <option value=".11">Almendro</option>
+                    <option value=".11">Arándano primer año</option>
+                    <option value=".14">Arándano segundo año</option>
+                    <option value=".21">Arándano tercer año</option>
+                    <option value="1.1">Arroz</option>
+                    <option value=".4">Arveja fresca</option>
+                    <option value=".4">Cebolla seca</option>
+                    <option value=".4">Cebolla verde</option>
+                    <option value=".4">Coliflor</option>
+                    <option value=".4">Papa</option>
+                    <option value=".4">Tomate</option>
+                  </select>
+                  <label>Evapotranspiración</label>
+                  <input style="margin-left:5px ;" id="eto">
+                  <button class="btn btn-primary" style="background-color: #01594B; margin-left: 5px;" (click)="multiplicar()">Calcular</button>
+                  
+                </div>
+              </div>
+        </div>
+       
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">El agua a utilizar es</h5>
+                  <p><input type="text" [value]="eto"> mm/ semana</p>
+                </div>
+              </div>
+        </div>
+    </div>    
+</div>

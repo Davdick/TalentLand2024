@@ -1,0 +1,36 @@
+<div class="jeje">
+    <div class="container">
+
+    @for( productos of productos ; track productos.nombre){
+        <div class="todo">
+        <div class="imagen">
+            <img src="{{productos.image}}" class="img-fluid" alt="Imagen del producto">
+        </div>
+
+        <div class="info">
+            <h2>{{productos.nombre}}</h2>
+            <p>{{productos.descripcion}}</p>
+            <p>{{productos.precio}}</p>
+        </div>
+    </div>
+
+    }
+    </div>
+    <div class="container2">
+
+        @for( productos2 of productos2; track productos2.nombre){
+            <div class="todo">
+            <div class="imagen">
+                <img src="{{productos2.image}}" class="img-fluid" alt="Imagen del producto">
+            </div>
+    
+            <div class="info">
+                <h2>{{productos2.nombre}}</h2>
+                <p>{{productos2.descripcion}}</p>
+                <p>{{productos2.precio}}</p>
+            </div>
+        </div>
+    
+        }
+        </div>
+</div>
